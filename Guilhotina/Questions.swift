@@ -20,9 +20,9 @@ class Questions {
         return resp
     }
     func getQuestion() -> (question: String, answer: [Character]) {
-        let randonNumberGenerator20000 = Int(arc4random_uniform(UInt32(questionsAnswers.count - 1)))
+        let randonNumberGenerator2000 = Int(arc4random_uniform(UInt32(questionsAnswers.count - 1)))
         var keys = Array(questionsAnswers.keys)
-        let randonKey = keys[randonNumberGenerator20000]
+        let randonKey = keys[randonNumberGenerator2000]
         let answerChar = char(questao: randonKey)
         return (question: randonKey, answer: answerChar)
     }
