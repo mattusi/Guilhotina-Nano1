@@ -16,7 +16,7 @@ class Sounds {
             do {
                 laminaSoundEffect = try AVAudioPlayer(data: asset.data, fileTypeHint: "caf")
                 laminaSoundEffect?.play()
-                print("yes")
+                
             } catch let error as NSError {
                 print(error.localizedDescription)
             }
