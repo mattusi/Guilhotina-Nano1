@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lamina: UIImageView!
     var sounds = Sounds()
+    
+    var categoriaSelecionada: String?
     func errou(imgView: UIImageView){
         sounds.soundLamina()
         UIView.animate(withDuration: 2, animations:  {
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Main game"
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -26,4 +26,8 @@ class Questions {
         let answerChar = char(questao: randonKey)
         return (question: randonKey, answer: answerChar)
     }
+    func categorias() -> [String] {
+        //TODO:
+        return ["--","Gerais"]
+    }
 }

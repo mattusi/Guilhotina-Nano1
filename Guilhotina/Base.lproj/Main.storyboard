@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cMj-xz-cTM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainGame" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +39,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5qj-Rz-zgm"/>
                     <connections>
                         <outlet property="lamina" destination="A72-gE-iuW" id="D0O-Ko-0of"/>
                         <outlet property="topConstrain" destination="xRP-ac-J8c" id="iuI-06-IdD"/>
@@ -46,6 +47,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1729" y="718"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7q4-87-jb5">
+            <objects>
+                <navigationController id="cMj-xz-cTM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OcA-cD-bKY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UNj-aZ-LpE" kind="relationship" relationship="rootViewController" id="5A9-A0-0bK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fym-4y-GaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="720"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Zbc-sv-aVC">
+            <objects>
+                <viewController storyboardIdentifier="homeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UNj-aZ-LpE" customClass="HomeViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZEd-NO-P47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKi-le-CxA">
+                                <rect key="frame" x="0.0" y="386" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="RgU-0Z-bge"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-gZ-Rjh">
+                                <rect key="frame" x="164" y="556" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goBtn:" destination="UNj-aZ-LpE" eventType="touchUpInside" id="lJ8-qD-Lli"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nKi-le-CxA" firstAttribute="trailing" secondItem="2qc-gS-GmC" secondAttribute="trailing" id="0FZ-Gp-y2Y"/>
+                            <constraint firstItem="2qc-gS-GmC" firstAttribute="bottom" secondItem="nKi-le-CxA" secondAttribute="bottom" constant="119" id="Va3-Bn-kkV"/>
+                            <constraint firstItem="nKi-le-CxA" firstAttribute="leading" secondItem="2qc-gS-GmC" secondAttribute="leading" id="hah-Mo-AOP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2qc-gS-GmC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P9F-iA-CzF"/>
+                    <connections>
+                        <outlet property="categoriaPickerView" destination="nKi-le-CxA" id="Zql-4W-7HS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AN0-r9-93P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="719"/>
         </scene>
     </scenes>
     <resources>

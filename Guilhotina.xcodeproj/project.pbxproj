@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE44110820547C38009AD438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44110720547C38009AD438 /* Assets.xcassets */; };
+		AE44110A20547EB4009AD438 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44110920547EB4009AD438 /* HomeViewController.swift */; };
 		FD6BDA86205300B00013C4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDA85205300B00013C4CE /* AppDelegate.swift */; };
 		FD6BDA88205300B00013C4CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDA87205300B00013C4CE /* ViewController.swift */; };
 		FD6BDA8B205300B00013C4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6BDA89205300B00013C4CE /* Main.storyboard */; };
-		FD6BDA8D205300B00013C4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6BDA8C205300B00013C4CE /* Assets.xcassets */; };
 		FD6BDA90205300B00013C4CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6BDA8E205300B00013C4CE /* LaunchScreen.storyboard */; };
 		FD6BDAC2205303D70013C4CE /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDAC1205303D70013C4CE /* Questions.swift */; };
 		FD7466CB2053098D00060975 /* OBCCQN0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD7466CA2053098D00060975 /* OBCCQN0.jpg */; };
@@ -19,11 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE44110720547C38009AD438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE44110920547EB4009AD438 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FD6BDA82205300B00013C4CE /* Guilhotina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guilhotina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6BDA85205300B00013C4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD6BDA87205300B00013C4CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD6BDA8A205300B00013C4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD6BDA8C205300B00013C4CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/senac2018/Documents/Guilhotina-Nano1/Guilhotina/Assets.xcassets"; sourceTree = "<absolute>"; };
 		FD6BDA8F205300B00013C4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD6BDA91205300B00013C4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6BDAC1205303D70013C4CE /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
@@ -68,8 +70,9 @@
 				FD7466CC205315F700060975 /* Sounds.swift */,
 				FD6BDAC1205303D70013C4CE /* Questions.swift */,
 				FD6BDA89205300B00013C4CE /* Main.storyboard */,
+				AE44110920547EB4009AD438 /* HomeViewController.swift */,
 				FD7466CA2053098D00060975 /* OBCCQN0.jpg */,
-				FD6BDA8C205300B00013C4CE /* Assets.xcassets */,
+				AE44110720547C38009AD438 /* Assets.xcassets */,
 				FD6BDA8E205300B00013C4CE /* LaunchScreen.storyboard */,
 				FD6BDA91205300B00013C4CE /* Info.plist */,
 			);
@@ -137,8 +140,8 @@
 			files = (
 				FD7466CB2053098D00060975 /* OBCCQN0.jpg in Resources */,
 				FD6BDA90205300B00013C4CE /* LaunchScreen.storyboard in Resources */,
-				FD6BDA8D205300B00013C4CE /* Assets.xcassets in Resources */,
 				FD6BDA8B205300B00013C4CE /* Main.storyboard in Resources */,
+				AE44110820547C38009AD438 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +157,7 @@
 				FD7466CD205315F700060975 /* Sounds.swift in Sources */,
 				FD6BDAC2205303D70013C4CE /* Questions.swift in Sources */,
 				FD6BDA86205300B00013C4CE /* AppDelegate.swift in Sources */,
+				AE44110A20547EB4009AD438 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
