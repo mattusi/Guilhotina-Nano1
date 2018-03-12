@@ -28,6 +28,6 @@ class Questions {
     }
     func categorias() -> [String] {
         //TODO:
-        return ["--","Gerais"]
+        return ["--","Gerais","Historia","Apple", "Carros", "Animes"]
     }
 }

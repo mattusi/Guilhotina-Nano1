@@ -39,11 +39,29 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerData[row] != "--" {
             categoriaSelecionada = pickerData[row]
+            print(categoriaSelecionada)
         }
     }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let pickerLabel = UILabel()
+        let titleData = pickerData[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.font:UIFont(name: "Helvetica-Bold", size: 20.0)!,NSAttributedStringKey.foregroundColor:UIColor.white])
+        pickerLabel.attributedText = myTitle
+        pickerLabel.backgroundColor = #colorLiteral(red: 0.7399110198, green: 0.459803462, blue: 0.2446458638, alpha: 1)
+        pickerLabel.textAlignment = .center
+        
+        return pickerLabel
+    }
+    
     @IBAction func goBtn(_ sender: Any) {
-       // let mainGameVC = storyboard?.instantiateViewController(withIdentifier: "mainGame") as! ViewController
-        //if let passarCategoria
+       let mainGameVC = storyboard?.instantiateViewController(withIdentifier: "mainGame") as! ViewController
+        if let passarCategoria = categoriaSelecionada {
+            mainGameVC.categoriaSelecionada = passarCategoria
+            self.navigationController?.pushViewController(mainGameVC, animated: true)
+            categoriaSelecionada = nil
+        }
+        
     }
     
 }

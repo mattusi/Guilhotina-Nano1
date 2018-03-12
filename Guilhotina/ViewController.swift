@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Main game"
+        if let categoriaNome = categoriaSelecionada {
+            self.title = categoriaNome
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
