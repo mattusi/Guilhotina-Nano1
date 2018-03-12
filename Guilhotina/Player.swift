@@ -29,4 +29,5 @@ class Player {
     func gotWrong() {
         //TODO: when the player gets something wrong add it to the array
     }
+    
 }
