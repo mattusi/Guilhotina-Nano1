@@ -10,7 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var questions = Questions()
+    var timer: Timer?
+    var isItLeft = true
     
+    @IBOutlet weak var clouds: UIImageView!
     @IBOutlet weak var categoriaPickerView: UIPickerView!
     
     var pickerData: [String] = []
@@ -19,11 +22,24 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(cloudsMove), userInfo: nil, repeats: true)
         pickerData = questions.categorias()
         
         self.categoriaPickerView.delegate = self
         self.categoriaPickerView.dataSource = self
         
+    }
+    
+    @objc func cloudsMove() {
+        if isItLeft{
+            UIView.animate(withDuration: 5, animations: {
+                self.clouds.center.x += 90})
+            isItLeft = false
+        } else {
+            UIView.animate(withDuration: 5, animations: {
+                self.clouds.center.x -= 90})
+            isItLeft = true
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

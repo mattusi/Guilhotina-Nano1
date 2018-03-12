@@ -285,6 +285,13 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKi-le-CxA">
                                 <rect key="frame" x="117" y="417.5" width="141" height="126"/>
                             </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="5Q0-1k-jcW">
+                                <rect key="frame" x="-60" y="64" width="375" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="1cB-hH-EQz"/>
+                                    <constraint firstAttribute="width" constant="375" id="kxS-M6-2ch"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="txT-sZ-3jh">
                                 <rect key="frame" x="67" y="139" width="241" height="128.5"/>
                                 <constraints>
@@ -304,8 +311,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5Q0-1k-jcW" firstAttribute="centerX" secondItem="ZEd-NO-P47" secondAttribute="centerX" constant="-60" id="AJp-IM-m6b"/>
                             <constraint firstItem="2qc-gS-GmC" firstAttribute="bottom" secondItem="t6m-gZ-Rjh" secondAttribute="bottom" constant="20" id="DrY-9P-N8Q"/>
                             <constraint firstItem="2qc-gS-GmC" firstAttribute="trailing" secondItem="nKi-le-CxA" secondAttribute="trailing" constant="117" id="ENo-93-8bm"/>
+                            <constraint firstItem="5Q0-1k-jcW" firstAttribute="top" secondItem="2qc-gS-GmC" secondAttribute="top" id="EPK-HW-t6q"/>
                             <constraint firstItem="txT-sZ-3jh" firstAttribute="top" secondItem="2qc-gS-GmC" secondAttribute="top" constant="75" id="Ey9-ph-Gob"/>
                             <constraint firstItem="t6m-gZ-Rjh" firstAttribute="leading" secondItem="2qc-gS-GmC" secondAttribute="leading" constant="105" id="MNL-vm-eEB"/>
                             <constraint firstItem="yRq-AH-ta6" firstAttribute="leading" secondItem="ZEd-NO-P47" secondAttribute="leading" constant="-16" id="R5q-vp-YBV"/>
@@ -324,6 +333,7 @@
                     <navigationItem key="navigationItem" id="P9F-iA-CzF"/>
                     <connections>
                         <outlet property="categoriaPickerView" destination="nKi-le-CxA" id="Zql-4W-7HS"/>
+                        <outlet property="clouds" destination="5Q0-1k-jcW" id="AH7-Wn-Z1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AN0-r9-93P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -362,6 +372,7 @@
         <image name="Z" width="110" height="119"/>
         <image name="bg-HOME" width="803" height="1333"/>
         <image name="bg-Screen02" width="751" height="1333"/>
+        <image name="clouds" width="843" height="417"/>
         <image name="grass-position02" width="751" height="743"/>
         <image name="guillotine-back" width="283" height="209"/>
         <image name="guillotine-front" width="301" height="823"/>
