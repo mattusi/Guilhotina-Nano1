@@ -19,6 +19,7 @@
 		FD6BDAC2205303D70013C4CE /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDAC1205303D70013C4CE /* Questions.swift */; };
 		FD7466CD205315F700060975 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7466CC205315F700060975 /* Sounds.swift */; };
 		FDBC4D7A205305B100A1631F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC4D79205305B100A1631F /* Player.swift */; };
+		FDE9D8EC20586AB000877D2D /* CabinSketch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDE9D8EB20586AAA00877D2D /* CabinSketch-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FD6BDAC1205303D70013C4CE /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		FD7466CC205315F700060975 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		FDBC4D79205305B100A1631F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FDE9D8EB20586AAA00877D2D /* CabinSketch-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinSketch-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				AE44110720547C38009AD438 /* Assets.xcassets */,
 				FD6BDA8E205300B00013C4CE /* LaunchScreen.storyboard */,
 				FD6BDA91205300B00013C4CE /* Info.plist */,
+				FDE9D8EB20586AAA00877D2D /* CabinSketch-Regular.ttf */,
 			);
 			path = Guilhotina;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6BDA90205300B00013C4CE /* LaunchScreen.storyboard in Resources */,
+				FDE9D8EC20586AB000877D2D /* CabinSketch-Regular.ttf in Resources */,
 				FD6BDA8B205300B00013C4CE /* Main.storyboard in Resources */,
 				AE44110820547C38009AD438 /* Assets.xcassets in Resources */,
 			);

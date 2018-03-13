@@ -16,7 +16,6 @@ class Questions {
                             "Qual os país que têm a maior expectativa de vida do mundo?" : "Japao",
                             "Em qual período da pré-história o fogo foi descoberto?" : "Paleolitico",
                             "Em qual local da Ásia o português é língua oficial?" : "Macau",
-                            "Qual foi o recurso utilizado inicialmente pelo homem para explicar a origem das coisas?" : "Mitologia",
                             "Júpiter é correlato romano a qual deus grego?" : "Zeus",
                             "Plutão é correlato romano a qual deus grego?" : "Hades",
                             "Quem é o deus grego do amor?" : "Eros",
