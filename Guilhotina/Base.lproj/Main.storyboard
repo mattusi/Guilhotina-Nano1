@@ -205,7 +205,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- - - -" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Ra-a41">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- - - -" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Ra-a41">
                                 <rect key="frame" x="191" y="193" width="168" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -248,6 +248,7 @@
                     <connections>
                         <outlet property="keyboardPositionConstraint" destination="hD4-7x-bbY" id="IdR-tD-suZ"/>
                         <outlet property="lamina" destination="A72-gE-iuW" id="D0O-Ko-0of"/>
+                        <outlet property="perguntaLbl" destination="zmB-IG-gKQ" id="L68-2l-Fw4"/>
                         <outlet property="topConstrain" destination="xRP-ac-J8c" id="iuI-06-IdD"/>
                     </connections>
                 </viewController>
@@ -334,6 +335,8 @@
                     <connections>
                         <outlet property="categoriaPickerView" destination="nKi-le-CxA" id="Zql-4W-7HS"/>
                         <outlet property="clouds" destination="5Q0-1k-jcW" id="AH7-Wn-Z1r"/>
+                        <outlet property="logo" destination="txT-sZ-3jh" id="9p5-WT-s1k"/>
+                        <outlet property="playBtn" destination="t6m-gZ-Rjh" id="LdI-XI-Swj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AN0-r9-93P" userLabel="First Responder" sceneMemberID="firstResponder"/>

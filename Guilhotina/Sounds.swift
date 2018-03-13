@@ -9,10 +9,23 @@
 import UIKit
 import AVFoundation
 class Sounds {
-    var laminaSoundEffect: AVAudioPlayer?
+    private var laminaSoundEffect: AVAudioPlayer?
+    private var deathSoundEffect: AVAudioPlayer?
     func soundLamina() {
         
         if let asset = NSDataAsset(name: "lamina") {
+            do {
+                laminaSoundEffect = try AVAudioPlayer(data: asset.data, fileTypeHint: "caf")
+                laminaSoundEffect?.volume = 2
+                laminaSoundEffect?.play()
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    func soundDeath() {
+        if let asset = NSDataAsset(name: "Wilhelm-Scream") {
             do {
                 laminaSoundEffect = try AVAudioPlayer(data: asset.data, fileTypeHint: "caf")
                 laminaSoundEffect?.play()

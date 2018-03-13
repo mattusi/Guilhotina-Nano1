@@ -13,7 +13,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var timer: Timer?
     var isItLeft = true
     
+    @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var clouds: UIImageView!
+    @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var categoriaPickerView: UIPickerView!
     
     var pickerData: [String] = []
@@ -24,7 +26,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(cloudsMove), userInfo: nil, repeats: true)
         pickerData = questions.categorias()
-        
+        UIView.animate(withDuration: 5) {
+            self.clouds.center.x -= 90
+            self.logo.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }
         self.categoriaPickerView.delegate = self
         self.categoriaPickerView.dataSource = self
         
@@ -33,11 +38,15 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @objc func cloudsMove() {
         if isItLeft{
             UIView.animate(withDuration: 5, animations: {
-                self.clouds.center.x += 90})
+                self.clouds.center.x += 90
+                self.logo.transform = CGAffineTransform(scaleX: 1, y: 1)
+            })
             isItLeft = false
         } else {
             UIView.animate(withDuration: 5, animations: {
-                self.clouds.center.x -= 90})
+                self.clouds.center.x -= 90
+               self.logo.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            })
             isItLeft = true
         }
     }
@@ -53,7 +62,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerData[row] != "--" {
+        if pickerData[row] != "" {
             categoriaSelecionada = pickerData[row]
             print(categoriaSelecionada)
         }
@@ -75,7 +84,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if let passarCategoria = categoriaSelecionada {
             mainGameVC.categoriaSelecionada = passarCategoria
             self.navigationController?.pushViewController(mainGameVC, animated: true)
-            categoriaSelecionada = nil
+            
         }
         
     }

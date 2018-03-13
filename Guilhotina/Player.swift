@@ -12,6 +12,7 @@ class Player {
     var name: String! //stores the player name
     private var rightAnswers: [Character] = [] //stores the right answers, for scorekeeping
     private var wrongAnswers: [Character] = []// stores the wrong answers, for scorekeeping
+    var lifes = 4
     init(name: String) {
         self.name = name
     }

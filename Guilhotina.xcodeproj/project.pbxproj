@@ -14,7 +14,6 @@
 		FD6BDA8B205300B00013C4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6BDA89205300B00013C4CE /* Main.storyboard */; };
 		FD6BDA90205300B00013C4CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6BDA8E205300B00013C4CE /* LaunchScreen.storyboard */; };
 		FD6BDAC2205303D70013C4CE /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDAC1205303D70013C4CE /* Questions.swift */; };
-		FD7466CB2053098D00060975 /* OBCCQN0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD7466CA2053098D00060975 /* OBCCQN0.jpg */; };
 		FD7466CD205315F700060975 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7466CC205315F700060975 /* Sounds.swift */; };
 		FDBC4D7A205305B100A1631F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC4D79205305B100A1631F /* Player.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		FD6BDA8F205300B00013C4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD6BDA91205300B00013C4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6BDAC1205303D70013C4CE /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		FD7466CA2053098D00060975 /* OBCCQN0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OBCCQN0.jpg; sourceTree = "<group>"; };
 		FD7466CC205315F700060975 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		FDBC4D79205305B100A1631F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +69,6 @@
 				FD6BDAC1205303D70013C4CE /* Questions.swift */,
 				FD6BDA89205300B00013C4CE /* Main.storyboard */,
 				AE44110920547EB4009AD438 /* HomeViewController.swift */,
-				FD7466CA2053098D00060975 /* OBCCQN0.jpg */,
 				AE44110720547C38009AD438 /* Assets.xcassets */,
 				FD6BDA8E205300B00013C4CE /* LaunchScreen.storyboard */,
 				FD6BDA91205300B00013C4CE /* Info.plist */,
@@ -138,7 +135,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7466CB2053098D00060975 /* OBCCQN0.jpg in Resources */,
 				FD6BDA90205300B00013C4CE /* LaunchScreen.storyboard in Resources */,
 				FD6BDA8B205300B00013C4CE /* Main.storyboard in Resources */,
 				AE44110820547C38009AD438 /* Assets.xcassets in Resources */,

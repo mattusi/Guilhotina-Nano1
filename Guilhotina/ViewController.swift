@@ -11,24 +11,37 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var topConstrain: NSLayoutConstraint!
     @IBOutlet weak var keyboardPositionConstraint: NSLayoutConstraint!
+    @IBOutlet weak var perguntaLbl: UILabel!
     
     @IBOutlet weak var lamina: UIImageView!
     var sounds = Sounds()
+    var questions = Questions()
+    var player = Player(name: "player")
     
     var categoriaSelecionada: String?
-    func errou(imgView: UIImageView){
-        sounds.soundLamina()
-        UIView.animate(withDuration: 2, animations:  {
+    func errou(){
+        
+        player.lifes -= 1
+        if player.lifes > 0 {
+            sounds.soundLamina()
+            UIView.animate(withDuration: 2, animations:  {
             self.lamina.center.y += 40
-        })
-     
+            })
+        } else {
+            sounds.soundDeath()
+            UIView.animate(withDuration: 0.4, animations: {self.lamina.center.y += 100})
+            
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Main game"
+        let currentQA = questions.getQuestion()
         if let categoriaNome = categoriaSelecionada {
             self.title = categoriaNome
+            perguntaLbl.text = currentQA.question
+            
         }
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
@@ -48,7 +61,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func test(_ sender: Any) {
-        errou(imgView: lamina)
+        errou()
     }
     
 }
