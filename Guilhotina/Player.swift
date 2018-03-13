@@ -8,10 +8,13 @@
 
 import Foundation
 
+
+
 class Player {
     var name: String! //stores the player name
-    private var rightAnswers: [Character] = [] //stores the right answers, for scorekeeping
-    private var wrongAnswers: [Character] = []// stores the wrong answers, for scorekeeping
+    var rightAnswers: [Character] = [] //stores the right answers, for scorekeeping
+    private var wrongAnswers: [Character] = ["_", "_", "_", "_"]// stores the wrong answers, for scorekeeping
+    var lifes = 3
     init(name: String) {
         self.name = name
     }
@@ -23,11 +26,17 @@ class Player {
             return finalPoints
         }
     }
-    func gotRight() {
-        //TODO: when the player gets a question right add it to the array
+    func gotRight(char: Character) {
+        rightAnswers.append(char)
     }
-    func gotWrong() {
-        //TODO: when the player gets something wrong add it to the array
+    func gotWrong(char: Character) -> String {
+        wrongAnswers.remove(at: lifes)
+        wrongAnswers.append(char)
+        lifes -= 1
+        var string = String(wrongAnswers.reversed())
+        string.insert(separator: " ", every: 1)
+        return string
+        
     }
     
 }

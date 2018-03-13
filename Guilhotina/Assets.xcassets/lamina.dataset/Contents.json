@@ -6,8 +6,8 @@
   "data" : [
     {
       "idiom" : "universal",
-      "filename" : "lamina.m4a",
-      "universal-type-identifier" : "com.apple.coreaudio-format"
+      "filename" : "lamina 3.m4a",
+      "universal-type-identifier" : "com.apple.m4a-audio"
     }
   ]
 }

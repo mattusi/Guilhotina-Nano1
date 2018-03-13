@@ -10,7 +10,12 @@ import UIKit
 
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var questions = Questions()
+    var timer: Timer?
+    var isItLeft = true
     
+    @IBOutlet weak var playBtn: UIButton!
+    @IBOutlet weak var clouds: UIImageView!
+    @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var categoriaPickerView: UIPickerView!
     
     var pickerData: [String] = []
@@ -19,11 +24,31 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(cloudsMove), userInfo: nil, repeats: true)
         pickerData = questions.categorias()
-        
+        UIView.animate(withDuration: 5) {
+            self.clouds.center.x -= 90
+            self.logo.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }
         self.categoriaPickerView.delegate = self
         self.categoriaPickerView.dataSource = self
         
+    }
+    
+    @objc func cloudsMove() {
+        if isItLeft{
+            UIView.animate(withDuration: 5, animations: {
+                self.clouds.center.x += 90
+                self.logo.transform = CGAffineTransform(scaleX: 1, y: 1)
+            })
+            isItLeft = false
+        } else {
+            UIView.animate(withDuration: 5, animations: {
+                self.clouds.center.x -= 90
+               self.logo.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            })
+            isItLeft = true
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -37,13 +62,31 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerData[row] != "--" {
+        if pickerData[row] != "" {
             categoriaSelecionada = pickerData[row]
+            
         }
     }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let pickerLabel = UILabel()
+        let titleData = pickerData[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.font:UIFont(name: "Helvetica-Bold", size: 20.0)!,NSAttributedStringKey.foregroundColor:UIColor.white])
+        pickerLabel.attributedText = myTitle
+        pickerLabel.backgroundColor = #colorLiteral(red: 0.7399110198, green: 0.459803462, blue: 0.2446458638, alpha: 1)
+        pickerLabel.textAlignment = .center
+        
+        return pickerLabel
+    }
+    
     @IBAction func goBtn(_ sender: Any) {
-       // let mainGameVC = storyboard?.instantiateViewController(withIdentifier: "mainGame") as! ViewController
-        //if let passarCategoria
+       let mainGameVC = storyboard?.instantiateViewController(withIdentifier: "mainGame") as! ViewController
+        if let passarCategoria = categoriaSelecionada {
+            mainGameVC.categoriaSelecionada = passarCategoria
+            self.navigationController?.pushViewController(mainGameVC, animated: true)
+            
+        }
+        
     }
     
 }
