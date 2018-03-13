@@ -9,7 +9,32 @@
 import Foundation
 
 class Questions {
-    var questionsAnswers = ["Nome de cidade:":"Sao Paulo"]
+    var questionsAnswers = ["De quem é a famosa frase “Penso, logo existo?":"Descartes",
+                            "De onde é a invenção do chuveiro elétrico?" : "Brasil",
+                            "Qual o menor país do mundo?" : "Vaticano",
+                            "Qual o maior país mundo?" : "Rússia",
+                            "Qual o livro mais vendido no mundo a seguir à Bíblia?" : "Dom Quixote",
+                            "Qual os país que têm a maior expectativa de vida do mundo?" : "Japão",
+                            "Em qual período da pré-história o fogo foi descoberto?" : "Paleolítico",
+                            "Em qual local da Ásia o português é língua oficial?" : "Macau",
+                            "Qual foi o recurso utilizado inicialmente pelo homem para explicar a origem das coisas?" : "Mitologia",
+                            "Júpiter é correlato romano a qual deus grego?" : "Zeus",
+                            "Plutão é correlato romano a qual deus grego?" : "Hades",
+                            "Quem é o deus grego do amor?" : "Eros",
+                            "Quem é o deus grego da festa, vinho e do prazer?" : "Dionísio",
+                            "Qual é o corpo celeste que não possui luz própria?" : "Planetas",
+                            "Qual oceano está entre os continentes Americano e Africano?" : "Atlântico",
+                            "Qual a capital do Canada?" : "Ottawa",
+                            "Qual é a vegetação rasteira encontrada próximo às regiões polares?" : "Tundra",
+                            "Qual o nome comum de todos os insetos da ordem dos Sifonápteros?" : "Pulga",
+                            "Kuala Lumpur é a capital de qual país?" : "Malásia",
+                            "Qual a capital da Autrália?" : "Camberra",
+                            "Qual é o significado de untar?" : "Lubrificar",
+                            "Que outro nome recebe o Contratorpedeiro?" : "Destroyer",
+                            "Qual o nome da força devido a diferença de intensidade faz o avião voar?" : "Sustentação",
+                            "Como é chamado o ponto mais alto da cabeça?": "Cocoruto",
+                            "Qual é o maior golfo do mundo?": "Mexicano"
+    ]
     private func char(questao: String) -> [Character] {
         //Returns all the characters in the answer of the question asked
         var resp: [Character] = []

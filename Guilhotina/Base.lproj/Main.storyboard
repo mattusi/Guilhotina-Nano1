@@ -37,44 +37,71 @@
                                 <rect key="frame" x="16" y="63" width="161" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-ns-Nxr">
-                                <rect key="frame" x="313" y="290" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jaj-64-lEs"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-PI-YWv">
                                 <rect key="frame" x="0.0" y="438" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-mU-72l">
                                         <rect key="frame" x="0.0" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="A"/>
+                                        <state key="normal" title="a" backgroundImage="A">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="imp-CC-ZxQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s78-sA-SzA">
                                         <rect key="frame" x="53.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="B"/>
+                                        <state key="normal" title="b" backgroundImage="B">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXL-58-aLP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHz-tY-PwS">
                                         <rect key="frame" x="107" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="C"/>
+                                        <state key="normal" title="c" backgroundImage="C">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvi-VD-WqX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS8-sV-LTR">
                                         <rect key="frame" x="160.5" y="0.0" width="54" height="50"/>
-                                        <state key="normal" backgroundImage="D"/>
+                                        <state key="normal" title="d" backgroundImage="D">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="we1-Yf-Bzi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myI-ge-Zpy">
                                         <rect key="frame" x="214.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="E"/>
+                                        <state key="normal" title="e" backgroundImage="E">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dv3-00-E6N"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elW-d0-JIk">
                                         <rect key="frame" x="268" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="F"/>
+                                        <state key="normal" title="f" backgroundImage="F">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMO-mm-rVN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgi-jx-5Pf">
                                         <rect key="frame" x="321.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="G"/>
+                                        <state key="normal" title="g" backgroundImage="G">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJw-wO-cgK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -86,31 +113,66 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTe-MS-ITM">
                                         <rect key="frame" x="0.0" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="O"/>
+                                        <state key="normal" title="o" backgroundImage="O">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1l-sp-Fks"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObX-Xs-9LW">
                                         <rect key="frame" x="53.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="P"/>
+                                        <state key="normal" title="p" backgroundImage="P">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9q-t6-Zfw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx2-UU-Rcj">
                                         <rect key="frame" x="107" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="Q"/>
+                                        <state key="normal" title="q" backgroundImage="Q">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ry9-42-PAr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-1M-upp">
                                         <rect key="frame" x="160.5" y="0.0" width="54" height="50"/>
-                                        <state key="normal" backgroundImage="R"/>
+                                        <state key="normal" title="r" backgroundImage="R">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Gh-SP-O4U"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD2-XW-mdr">
                                         <rect key="frame" x="214.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="S"/>
+                                        <state key="normal" title="s" backgroundImage="S">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aol-pO-ZHf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkc-2y-hD0">
                                         <rect key="frame" x="268" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="T"/>
+                                        <state key="normal" title="t" backgroundImage="T">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A4o-Jk-isf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-0g-MQE">
                                         <rect key="frame" x="321.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="U"/>
+                                        <state key="normal" title="u" backgroundImage="U">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kse-gC-app"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -126,23 +188,48 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8V-3b-c6h">
                                         <rect key="frame" x="53.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="V"/>
+                                        <state key="normal" title="v" backgroundImage="V">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASj-ib-TMb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajq-eW-QHu">
                                         <rect key="frame" x="107" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="W"/>
+                                        <state key="normal" title="w" backgroundImage="W">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WvR-A1-Gcx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-KR-oV7">
                                         <rect key="frame" x="160.5" y="0.0" width="54" height="50"/>
-                                        <state key="normal" backgroundImage="X"/>
+                                        <state key="normal" title="x" backgroundImage="X">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GY-JM-r5a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-9l-PtF">
                                         <rect key="frame" x="214.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="Y"/>
+                                        <state key="normal" title="y" backgroundImage="Y">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ly9-vj-DNx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ld-rg-6Sc">
                                         <rect key="frame" x="268" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="Z"/>
+                                        <state key="normal" title="z" backgroundImage="Z">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIT-Z2-xhi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOD-O3-zBC">
                                         <rect key="frame" x="321.5" y="0.0" width="53.5" height="50"/>
@@ -158,38 +245,73 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-xl-43T">
                                         <rect key="frame" x="0.0" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="H"/>
+                                        <state key="normal" title="h" backgroundImage="H">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x70-mb-sSq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8t-RL-z1q">
                                         <rect key="frame" x="53.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="I"/>
+                                        <state key="normal" title="i" backgroundImage="I">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVO-ng-Qiz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V99-7q-WGA">
                                         <rect key="frame" x="107" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="J"/>
+                                        <state key="normal" title="j" backgroundImage="J">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Sa-QA-jJ3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyP-d2-Gim">
                                         <rect key="frame" x="160.5" y="0.0" width="54" height="50"/>
-                                        <state key="normal" backgroundImage="K"/>
+                                        <state key="normal" title="k" backgroundImage="K">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7A9-8y-o44"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNP-py-Rbt">
                                         <rect key="frame" x="214.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="L"/>
+                                        <state key="normal" title="l" backgroundImage="L">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8d-r9-spP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-9H-LKG">
                                         <rect key="frame" x="268" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="M"/>
+                                        <state key="normal" title="m" backgroundImage="M">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIE-5f-oXH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjY-3y-BOO">
                                         <rect key="frame" x="321.5" y="0.0" width="53.5" height="50"/>
-                                        <state key="normal" backgroundImage="N"/>
+                                        <state key="normal" title="n" backgroundImage="N">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyobardWithTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6a-BR-BKN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NUc-Gi-hnX"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- - - - - - -" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aey-Ab-tbK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ _ _ _ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aey-Ab-tbK">
                                 <rect key="frame" x="16" y="402" width="343" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -197,18 +319,18 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pergunta" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-IG-gKQ">
-                                <rect key="frame" x="191" y="40" width="168" height="127"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Ra-a41">
+                                <rect key="frame" x="191" y="254" width="168" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- - - -" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Ra-a41">
-                                <rect key="frame" x="191" y="193" width="168" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pergunta" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-IG-gKQ">
+                                <rect key="frame" x="191" y="71" width="168" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
@@ -249,7 +371,9 @@
                         <outlet property="keyboardPositionConstraint" destination="hD4-7x-bbY" id="IdR-tD-suZ"/>
                         <outlet property="lamina" destination="A72-gE-iuW" id="D0O-Ko-0of"/>
                         <outlet property="perguntaLbl" destination="zmB-IG-gKQ" id="L68-2l-Fw4"/>
+                        <outlet property="respostaLbl" destination="aey-Ab-tbK" id="v14-Ub-D80"/>
                         <outlet property="topConstrain" destination="xRP-ac-J8c" id="iuI-06-IdD"/>
+                        <outlet property="wrongLettersLbl" destination="35d-Ra-a41" id="YXd-dR-Oa2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
