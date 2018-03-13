@@ -64,7 +64,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerData[row] != "" {
             categoriaSelecionada = pickerData[row]
-            print(categoriaSelecionada)
+            
         }
     }
     
