@@ -312,14 +312,14 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ _ _ _ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aey-Ab-tbK">
-                                <rect key="frame" x="16" y="402" width="343" height="28"/>
+                                <rect key="frame" x="88" y="398.5" width="200" height="31.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Ra-a41">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Ra-a41">
                                 <rect key="frame" x="191" y="254" width="168" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -327,8 +327,8 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pergunta" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-IG-gKQ">
-                                <rect key="frame" x="191" y="71" width="168" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pergunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-IG-gKQ">
+                                <rect key="frame" x="191" y="102" width="168" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -380,6 +380,79 @@
             </objects>
             <point key="canvasLocation" x="1727.2" y="714.69265367316348"/>
         </scene>
+        <!--Loser View Controller-->
+        <scene sceneID="vTc-MH-GE7">
+            <objects>
+                <viewController storyboardIdentifier="loser" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sfg-0M-6RH" customClass="LoserViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YaH-c1-5Uo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-lose" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-hJ-PSI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFq-Qw-Iod">
+                                <rect key="frame" x="47" y="404" width="281" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Wf9-nB-ERr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PqQ-xt-kJ6" firstAttribute="bottom" secondItem="Tfe-hJ-PSI" secondAttribute="bottom" id="6mc-3Q-RTr"/>
+                            <constraint firstItem="PqQ-xt-kJ6" firstAttribute="trailing" secondItem="Tfe-hJ-PSI" secondAttribute="trailing" id="QLk-vo-rrf"/>
+                            <constraint firstItem="Tfe-hJ-PSI" firstAttribute="leading" secondItem="PqQ-xt-kJ6" secondAttribute="leading" id="VyU-C2-k9E"/>
+                            <constraint firstItem="Tfe-hJ-PSI" firstAttribute="top" secondItem="YaH-c1-5Uo" secondAttribute="topMargin" id="Yhg-5P-Kam"/>
+                            <constraint firstItem="PqQ-xt-kJ6" firstAttribute="trailing" secondItem="PFq-Qw-Iod" secondAttribute="trailing" constant="47" id="ekV-xU-3GA"/>
+                            <constraint firstItem="PqQ-xt-kJ6" firstAttribute="bottom" secondItem="PFq-Qw-Iod" secondAttribute="bottom" constant="195" id="fb1-aO-qnW"/>
+                            <constraint firstItem="PFq-Qw-Iod" firstAttribute="leading" secondItem="PqQ-xt-kJ6" secondAttribute="leading" constant="47" id="u5y-yU-Ll4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PqQ-xt-kJ6"/>
+                    </view>
+                    <connections>
+                        <outlet property="palavraCorretaLbl" destination="PFq-Qw-Iod" id="Kqh-Jz-vfU"/>
+                        <segue destination="Asm-mK-WJ1" kind="unwind" identifier="volta" unwindAction="unwindToVC1WithSegue:" id="Kec-Xe-gXr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wj-1m-nrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Asm-mK-WJ1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2613.5999999999999" y="1120.3898050974515"/>
+        </scene>
+        <!--Winner View Controller-->
+        <scene sceneID="blB-Oa-JVW">
+            <objects>
+                <viewController storyboardIdentifier="winner" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9BE-p0-E4y" customClass="WinnerViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iYX-uH-X1B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-win" translatesAutoresizingMaskIntoConstraints="NO" id="iYb-Mf-hWt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jzf-oj-CFx" firstAttribute="trailing" secondItem="iYb-Mf-hWt" secondAttribute="trailing" id="Gjs-dw-s2D"/>
+                            <constraint firstItem="jzf-oj-CFx" firstAttribute="bottom" secondItem="iYb-Mf-hWt" secondAttribute="bottom" id="RNN-9p-Yo8"/>
+                            <constraint firstItem="iYb-Mf-hWt" firstAttribute="leading" secondItem="jzf-oj-CFx" secondAttribute="leading" id="hMU-MF-yWZ"/>
+                            <constraint firstItem="iYb-Mf-hWt" firstAttribute="top" secondItem="iYX-uH-X1B" secondAttribute="topMargin" id="mGT-Bt-5Ut"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jzf-oj-CFx"/>
+                    </view>
+                    <connections>
+                        <segue destination="WQC-tY-SNk" kind="unwind" identifier="volta" unwindAction="unwindToVC1WithSegue:" id="oNm-nP-Ujj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpg-d7-HTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WQC-tY-SNk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="366"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7q4-87-jb5">
             <objects>
@@ -399,7 +472,7 @@
         <!--Home View Controller-->
         <scene sceneID="Zbc-sv-aVC">
             <objects>
-                <viewController storyboardIdentifier="homeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UNj-aZ-LpE" customClass="HomeViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UNj-aZ-LpE" customClass="HomeViewController" customModule="Guilhotina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEd-NO-P47">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -499,6 +572,8 @@
         <image name="Z" width="110" height="119"/>
         <image name="bg-HOME" width="803" height="1333"/>
         <image name="bg-Screen02" width="751" height="1333"/>
+        <image name="bg-lose" width="750" height="1333"/>
+        <image name="bg-win" width="751" height="1333"/>
         <image name="clouds" width="843" height="417"/>
         <image name="grass-position02" width="751" height="743"/>
         <image name="guillotine-back" width="283" height="209"/>

@@ -10,6 +10,8 @@
 		AE44110820547C38009AD438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44110720547C38009AD438 /* Assets.xcassets */; };
 		AE44110A20547EB4009AD438 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44110920547EB4009AD438 /* HomeViewController.swift */; };
 		AE5E19662057863100D120AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E19652057863100D120AA /* Extensions.swift */; };
+		FD3575C52058467D00A3D9D9 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3575C42058467D00A3D9D9 /* WinnerViewController.swift */; };
+		FD3575C7205846F200A3D9D9 /* LoserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3575C6205846F200A3D9D9 /* LoserViewController.swift */; };
 		FD6BDA86205300B00013C4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDA85205300B00013C4CE /* AppDelegate.swift */; };
 		FD6BDA88205300B00013C4CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDA87205300B00013C4CE /* ViewController.swift */; };
 		FD6BDA8B205300B00013C4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6BDA89205300B00013C4CE /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		AE44110720547C38009AD438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE44110920547EB4009AD438 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AE5E19652057863100D120AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FD3575C42058467D00A3D9D9 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
+		FD3575C6205846F200A3D9D9 /* LoserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoserViewController.swift; sourceTree = "<group>"; };
 		FD6BDA82205300B00013C4CE /* Guilhotina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guilhotina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6BDA85205300B00013C4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD6BDA87205300B00013C4CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				FD7466CC205315F700060975 /* Sounds.swift */,
 				FD6BDAC1205303D70013C4CE /* Questions.swift */,
 				FD6BDA89205300B00013C4CE /* Main.storyboard */,
+				FD3575C6205846F200A3D9D9 /* LoserViewController.swift */,
+				FD3575C42058467D00A3D9D9 /* WinnerViewController.swift */,
 				AE44110920547EB4009AD438 /* HomeViewController.swift */,
 				AE44110720547C38009AD438 /* Assets.xcassets */,
 				FD6BDA8E205300B00013C4CE /* LaunchScreen.storyboard */,
@@ -155,9 +161,11 @@
 				FD6BDA88205300B00013C4CE /* ViewController.swift in Sources */,
 				FD7466CD205315F700060975 /* Sounds.swift in Sources */,
 				FD6BDAC2205303D70013C4CE /* Questions.swift in Sources */,
+				FD3575C7205846F200A3D9D9 /* LoserViewController.swift in Sources */,
 				FD6BDA86205300B00013C4CE /* AppDelegate.swift in Sources */,
 				AE44110A20547EB4009AD438 /* HomeViewController.swift in Sources */,
 				AE5E19662057863100D120AA /* Extensions.swift in Sources */,
+				FD3575C52058467D00A3D9D9 /* WinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.Guilhotina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -316,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.Guilhotina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

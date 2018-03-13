@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         wrongLettersLbl.text = player.gotWrong(char: wrongLetter)
         
         if player.lifes >= 0 {
+            //errou uma letra
             sounds.soundLamina()
             UIView.animate(withDuration: 2, animations:  {
             self.lamina.center.y += 40
@@ -36,16 +37,29 @@ class ViewController: UIViewController {
         } else {
             sounds.soundDeath()
             UIView.animate(withDuration: 0.4, animations: {self.lamina.center.y += 100})
+            //chamar tela de morte
+            let loserVC = storyboard?.instantiateViewController(withIdentifier: "loser") as! LoserViewController
+            let passarCategoria = String(currentQA.answer)
+            loserVC.palavraCerta = passarCategoria
+            self.navigationController?.pushViewController(loserVC, animated: true)
+                
             
         }
     }
-    
+    override func loadView() {
+        super.loadView()
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4571455717, green: 0.6585432887, blue: 1, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Main game"
         currentQA = questions.getQuestion()
         if let categoriaNome = categoriaSelecionada {
             self.title = categoriaNome
+            
+            //self.navigationController?.navigationBar.isTranslucent = false
             perguntaLbl.text = currentQA.question
             
             for _ in currentQA.answer {
@@ -57,11 +71,13 @@ class ViewController: UIViewController {
         }
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
-            case 2436:
-                print("iPhone X")
-                keyboardPositionConstraint.constant = 50
-            default:
-                keyboardPositionConstraint.constant = 5
+                case 1920, 2208:
+                    keyboardPositionConstraint.constant = 60
+                case 2436:
+                    print("iPhone X")
+                    keyboardPositionConstraint.constant = 50
+                default:
+                    keyboardPositionConstraint.constant = 5
             }
         }
         // Do any additional setup after loading the view, typically from a nib.
@@ -86,6 +102,12 @@ class ViewController: UIViewController {
                 string.insert(separator: " ", every: 1)
                 respostaLbl.text = string
             }
+        }
+        if respostaLbl.text?.range(of: "_") == nil {
+            //chama a tela de vencedor
+            let winnerVC = storyboard?.instantiateViewController(withIdentifier: "winner") as! WinnerViewController
+            
+            self.navigationController?.pushViewController(winnerVC, animated: true)
         }
         if taErrado {
             errou(wrongLetter: buttonText)

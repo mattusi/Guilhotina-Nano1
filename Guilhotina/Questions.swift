@@ -13,7 +13,6 @@ class Questions {
                             "De onde é a invenção do chuveiro elétrico?" : "Brasil",
                             "Qual o menor país do mundo?" : "Vaticano",
                             "Qual o maior país mundo?" : "Rússia",
-                            "Qual o livro mais vendido no mundo a seguir à Bíblia?" : "Dom Quixote",
                             "Qual os país que têm a maior expectativa de vida do mundo?" : "Japão",
                             "Em qual período da pré-história o fogo foi descoberto?" : "Paleolítico",
                             "Em qual local da Ásia o português é língua oficial?" : "Macau",
@@ -53,6 +52,6 @@ class Questions {
     }
     func categorias() -> [String] {
         //TODO:
-        return ["","Gerais","Historia","Apple", "Carros", "Animes"]
+        return ["","Gerais"]
     }
 }

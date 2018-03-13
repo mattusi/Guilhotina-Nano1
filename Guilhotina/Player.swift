@@ -13,7 +13,7 @@ import Foundation
 class Player {
     var name: String! //stores the player name
     var rightAnswers: [Character] = [] //stores the right answers, for scorekeeping
-    private var wrongAnswers: [Character] = ["_", "_", "_", "_"]// stores the wrong answers, for scorekeeping
+    private var wrongAnswers: [Character] = [" ", " ", " ", " "]// stores the wrong answers, for scorekeeping
     var lifes = 3
     init(name: String) {
         self.name = name

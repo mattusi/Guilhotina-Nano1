@@ -21,9 +21,23 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var pickerData: [String] = []
     var categoriaSelecionada: String?
     
+    @IBAction func unwindToVC1(segue: UIStoryboardSegue) {
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4571455717, green: 0.6585432887, blue: 1, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = .white
+    }
+    
+    
+    override func loadView() {
+        super.loadView()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4571455717, green: 0.6585432887, blue: 1, alpha: 1)
         
+        self.navigationController?.navigationBar.tintColor = .white
+       
         timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(cloudsMove), userInfo: nil, repeats: true)
         pickerData = questions.categorias()
         UIView.animate(withDuration: 5) {
