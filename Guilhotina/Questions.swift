@@ -23,13 +23,11 @@ class Questions {
                             "Qual é o corpo celeste que não possui luz própria?" : "Planetas",
                             "Qual oceano está entre os continentes Americano e Africano?" : "Atlantico",
                             "Qual a capital do Canada?" : "Ottawa",
-                            "Qual é a vegetação rasteira encontrada próximo às regiões polares?" : "Tundra",
                             "Qual o nome comum de todos os insetos da ordem dos Sifonápteros?" : "Pulga",
                             "Kuala Lumpur é a capital de qual país?" : "Malasia",
                             "Qual a capital da Autrália?" : "Camberra",
                             "Qual é o significado de untar?" : "Lubrificar",
                             "Que outro nome recebe o Contratorpedeiro?" : "Destroyer",
-                            "Qual o nome da força devido a diferença de intensidade faz o avião voar?" : "Sustentacao",
                             "Como é chamado o ponto mais alto da cabeça?": "Cocoruto",
                             "Qual é o maior golfo do mundo?": "Mexicano"
     ]
@@ -51,6 +49,6 @@ class Questions {
     }
     func categorias() -> [String] {
         //TODO:
-        return ["","Gerais"]
+        return ["","Gerais", "test1", "test2", "test3"]
     }
 }

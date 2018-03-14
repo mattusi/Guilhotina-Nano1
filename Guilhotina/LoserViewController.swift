@@ -23,7 +23,7 @@ class LoserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        palavraCorretaLbl.text = palavraCerta!
+        palavraCorretaLbl.text = "A resposta era: " + palavraCerta!
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Categorias", style: .done, target: self, action: #selector(home))
         
     }
