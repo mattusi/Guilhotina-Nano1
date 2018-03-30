@@ -48,7 +48,7 @@ class Questions {
         return (question: randonKey, answer: answerChar)
     }
     func categorias() -> [String] {
-        //TODO:
-        return ["","Gerais", "test1", "test2", "test3"]
+        //TODO: add diferent questions for each category.
+        return ["Categorias:","Gerais"]
     }
 }

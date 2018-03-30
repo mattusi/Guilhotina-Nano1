@@ -24,16 +24,23 @@ class ViewController: UIViewController {
     var player = Player(name: "player")
     var currentQA: (question: String, answer: [Character])!
     var categoriaSelecionada: String?
-  
+    
+    //haptic feedback
+    let notification = UINotificationFeedbackGenerator()
     func errou(wrongLetter: Character){
         wrongLettersLbl.text = player.gotWrong(char: wrongLetter)
-        
+        notification.prepare()
         if player.lifes >= 0 {
             //errou uma letra
             sounds.soundLamina()
+            //haptic feedback
+            notification.notificationOccurred(.error)
+            //lamina animation
             UIView.animate(withDuration: 2, animations:  {
-            self.lamina.center.y += 40
+                self.lamina.center.y += 40
+                
             })
+        
         } else {
             sounds.soundDeath()
             UIView.animate(withDuration: 0.4, animations: {self.lamina.center.y += 100})
@@ -111,6 +118,8 @@ class ViewController: UIViewController {
         }
         if taErrado {
             errou(wrongLetter: buttonText)
+        } else {
+            notification.notificationOccurred(.success)
         }
     }
     
